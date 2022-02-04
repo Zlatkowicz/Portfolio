@@ -1,0 +1,36 @@
+@import './var';
+@mixin flex($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+@mixin transform($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+}
+@mixin btn {
+    padding: .7em 1em;
+    margin: 2em 1em;
+    outline: 2px solid map-get($color, tx-purple);
+    color: map-get($color, tx-purple);
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: .3em;
+    &:hover {
+        transition: .5s;
+        @include transform(scale(1.020));
+        box-shadow: 0 0 2em map-get($color, tx-purple);
+}
+}
+@mixin span {
+    color: map-get($color, tx-opacity);
+    font-family: $font;
+}
+@mixin sub__tittle {
+    color: map-get($color, tx-purple);
+    font-family: $font;
+    font-size: 2em;
+}

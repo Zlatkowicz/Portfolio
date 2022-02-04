@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0b0f1f;
+}
+@import 'components/header';
+@import 'components/main';

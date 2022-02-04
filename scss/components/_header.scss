@@ -1,0 +1,76 @@
+@import '../base/prefix';
+@import '../base/var';
+@import '../base/extend';
+.container {
+    height: 100vh;
+    width: 70%;
+    @include flex(space-between);
+    margin: auto;
+    @media screen and (max-width: 900px){
+        width: 100%;
+        flex-direction: column;
+    }
+    .header {
+        font-family: $font;
+        height: 100%;
+        width: 8vh;
+        /* NavBar */
+        .navbar {
+            top: 0;
+            position: sticky;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: .5em;
+            .name {
+                color: #a29cec;
+                font-size: 1.2em;
+                height: 5vh;
+                @include flex(center);
+            }
+            .media {
+                @media screen and (max-width: 900px){
+                    flex-direction: row;
+                }
+                height: 20vh;
+                @include flex(center);
+                flex-direction: column;
+                .mouse {
+                    @media screen and (max-width: 900px) {
+                        display: none;
+                    }
+                }
+            }
+            .icon {
+                height: 2.5em;
+                padding: .5em;
+                width: 2.5em;
+                margin: .5em 0;
+                background-color: #101621;
+                border-radius: 5px;
+                &:hover {
+                    transition: .5s;
+                    @include transform(scale(1.020) rotate(40deg));
+                    box-shadow: 0 0 2em map-get($color, tx-purple);
+                    background-color: #a19cecd7;
+                }
+                @media screen and (max-width: 900px){
+                    margin: 0 2em;
+                }
+            }
+            .moon {
+                background-color: transparent;
+                &:hover {
+                    box-shadow: none;
+                    transform: none;
+                }
+                @media screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+        }
+        /* NavBar End */
+    }
+}
