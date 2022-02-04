@@ -1,8 +1,17 @@
+@import 'base/extend';
+@import 'base/prefix';
+@import 'base/var';
 html {
     scroll-behavior: smooth;
 }
 body {
     background-color: #0b0f1f;
+}
+.span {
+    @include span;
+}
+.tittle {
+    @include sub__tittle;
 }
 @import 'components/header';
 @import 'components/main';

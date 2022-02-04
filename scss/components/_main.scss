@@ -95,12 +95,6 @@ main {
         width: 100%;
         @include flex(center);
         flex-direction: column;
-        .description__span {
-            @include span;
-        }
-        .description__tittle {
-            @include sub__tittle;
-        }
     }
     .description__container {
         @media screen and (max-width: 1230px){
@@ -166,5 +160,15 @@ main {
                 }
             }
         }
+    }
+}
+.experience {
+    @include flex(center);
+    flex-direction: column;
+    background: #cccc;
+    .experience__welcome {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
