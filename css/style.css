@@ -244,6 +244,11 @@ main .content img {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 400px) {
+  .description {
+    margin-top: 10em;
+  }
+}
 .description .description__welcome {
   width: 100%;
   display: flex;

@@ -88,6 +88,9 @@ main {
 .description {
     @include flex(space-evenly);
     flex-direction: column;
+    @media screen and (max-width: 400px){
+        margin-top: 10em;
+    }
     .description__welcome {
         width: 100%;
         @include flex(center);
