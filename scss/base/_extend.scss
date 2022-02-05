@@ -25,12 +25,16 @@
         box-shadow: 0 0 2em map-get($color, tx-purple);
 }
 }
-@mixin span {
-    color: map-get($color, tx-opacity);
-    font-family: $font;
+@import './var';
+@mixin container {
+    width: 70%;
+    height: 100%;
 }
-@mixin sub__tittle {
-    color: map-get($color, tx-purple);
-    font-family: $font;
-    font-size: 2em;
+@mixin span {
+    font-size: 1.2em;
+    opacity: map-get($color, opacity);
+}
+@mixin tittle {
+    color: map-get($color, tittle);
+    font-size: 1.5em;
 }
