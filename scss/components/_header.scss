@@ -1,0 +1,9 @@
+@import '../base/var';
+@import '../base/extend';
+header {
+    @include container;
+    background: #000;
+    div {
+        @include asideBar;
+    }
+}

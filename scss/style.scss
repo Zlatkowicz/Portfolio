@@ -4,4 +4,6 @@
 body {
     font-family: $font;
     color: map-get($color, txt);
+    background: map-get($color, bg);
 }
+@import 'components/header';
