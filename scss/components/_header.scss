@@ -1,9 +1,99 @@
 @import '../base/var';
 @import '../base/extend';
+@import '../base/prefix';
+/* Header Start */
 header {
+    position: relative;
     @include container;
-    background: #000;
-    div {
-        @include asideBar;
+    justify-content: space-between;
+    display: flex;
+    @media screen and (max-width: 900px){
+        flex-direction: column;
     }
+    /* Aside Left Start */
+    .aside {
+        @include asideBar;
+        @media screen and (max-width: 900px){
+            @include flex(space-evenly);
+            width: 100%;
+        }
+        .aside__div {
+            @include flex(space-between);
+            flex-direction: column;
+            height: 25%;
+            img {
+                @include icon;
+            }
+            hr {
+                color: map-get($color, tittle);
+                height: 4vh;
+            }
+        }
+        .span__container {
+            padding: 1em 0;
+            .aside__span {
+                @include tittle;
+                font-size: 1.2em;
+            }
+        }
+        .icon__container {
+            @media screen and (max-width: 900px){
+                flex-direction: row;
+            }
+        }
+    }
+    /* Aside Left End */
+
+    /* Aside Center Start */
+    .aside__center {
+        margin: auto;
+        height: 100%;
+        @include flex(flex-end);
+        flex-direction: column;
+        .aside__center__container {
+            flex-direction: column;
+            @include flex(center);
+            text-align: center;
+            .aside__center__welcome {
+                .aside__center__span {
+                    @include span;
+                }
+                .aside__center__tittle {
+                    @include tittle;
+                }
+            }
+            .aside__center__btn {
+                @include flex(space-evenly);
+                flex-direction: row;
+                width: 100%;
+                .btn {
+                    @include btn;
+                }
+                .btn__about {
+                    background-color: map-get($color, tittle);
+                    color: #000;
+                }
+            }
+            img {
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+    /* Aside Center End */
+
+    /* Aside Right Start */
+    .aside__right {
+        .aside__div {
+            img {
+                height: 45px;
+                width: 45px;
+            }
+        }
+        .icon__container {
+            height: 11%;
+        }
+    }
+    /* Aside Right End */
 }
+/* Header End */

@@ -14,19 +14,30 @@
 @mixin btn {
     padding: .7em 1em;
     margin: 2em 1em;
-    outline: 2px solid map-get($color, tx-purple);
-    color: map-get($color, tx-purple);
+    outline: 2px solid map-get($color, tittle);
+    color: map-get($color, tittle);
     font-size: 1.2em;
     text-align: center;
     border-radius: .3em;
     &:hover {
         transition: .5s;
         @include transform(scale(1.020));
-        box-shadow: 0 0 2em map-get($color, tx-purple);
+        box-shadow: 0 0 2em map-get($color, tittle);
 }
+}
+@mixin icon {
+    background-color: map-get($color, bg-icon);
+    border-radius: .3em;
+    padding: .5em;
+    &:hover {
+        transform: rotate(20deg);
+        transition: .5s;
+        background-color: #a19cec94;
+    }
 }
 @mixin container {
     width: 70%;
+    margin: auto;
     height: 100vh;
 }
 @mixin span {
@@ -35,11 +46,12 @@
 }
 @mixin tittle {
     color: map-get($color, tittle);
-    font-size: 1.5em;
+    font-size: 3em;
 }
 @mixin asideBar {
     width: 10%;
     height: 100%;
     @include flex(space-between);
     flex-direction: column;
+    text-align: center;
 }
