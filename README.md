@@ -1,8 +1,7 @@
 <h1 align="center"><img src="https://img.icons8.com/dusk/64/000000/monitor--v2.png"/> My Web developer portfolio <img src="https://img.icons8.com/dusk/64/000000/monitor--v2.png"/></h1>
 <h2 align="center"> Hi! I´m Armando Zlatkowicz </h2>
 <h4 align="center"> welcome to my web developer portfolio </h4>
-<div>
-  <a href="https://beacons.ai/rafaballerini">
+<div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Zlatkowicz&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zlatkowicz&layout=compact&langs_count=16&theme=dark"/>
 </div>
