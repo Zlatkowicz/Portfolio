@@ -159,6 +159,13 @@ header .aside__right .aside__div img {
   height: 45px;
   width: 45px;
 }
+header .aside__right .aside__div .moon {
+  background-color: transparent;
+}
+header .aside__right .aside__div .moon:hover {
+  transform: rotate(360deg);
+  background-color: transparent;
+}
 header .aside__right .icon__container {
   height: 11%;
 }

@@ -89,6 +89,13 @@ header {
                 height: 45px;
                 width: 45px;
             }
+            .moon {
+                background-color: transparent;
+                &:hover {
+                    transform: rotate(360deg);
+                    background-color: transparent;
+                }
+            }
         }
         .icon__container {
             height: 11%;
