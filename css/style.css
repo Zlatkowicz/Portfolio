@@ -46,6 +46,12 @@ header {
 @media screen and (max-width: 900px) {
   header {
     flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    width: 100%;
   }
 }
 header .aside {
@@ -82,9 +88,19 @@ header .aside .aside__div img:hover {
   transition: 0.5s;
   background-color: #a19cec94;
 }
+@media screen and (max-width: 900px) {
+  header .aside .aside__div img {
+    margin: 0.5em 1em;
+  }
+}
 header .aside .aside__div hr {
   color: #a29cec;
   height: 4vh;
+}
+@media screen and (max-width: 900px) {
+  header .aside .aside__div hr {
+    display: none;
+  }
 }
 header .aside .span__container {
   padding: 1em 0;
@@ -129,6 +145,11 @@ header .aside__center .aside__center__container .aside__center__btn {
   flex-direction: row;
   width: 100%;
 }
+@media screen and (max-width: 550px) {
+  header .aside__center .aside__center__container .aside__center__btn {
+    flex-direction: column;
+  }
+}
 header .aside__center .aside__center__container .aside__center__btn .btn {
   padding: 0.7em 1em;
   margin: 2em 1em;
@@ -147,6 +168,11 @@ header .aside__center .aside__center__container .aside__center__btn .btn:hover {
   -ms-transform: scale(1.02);
   box-shadow: 0 0 2em #a29cec;
 }
+@media screen and (max-width: 550px) {
+  header .aside__center .aside__center__container .aside__center__btn .btn {
+    margin: 0.5em 0;
+  }
+}
 header .aside__center .aside__center__container .aside__center__btn .btn__about {
   background-color: #a29cec;
   color: #000;
@@ -154,6 +180,23 @@ header .aside__center .aside__center__container .aside__center__btn .btn__about 
 header .aside__center .aside__center__container img {
   width: 500px;
   height: 500px;
+}
+@media screen and (max-width: 900px) {
+  header .aside__center .aside__center__container img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .aside__center .aside__center__container img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .aside__right {
+    display: none;
+  }
 }
 header .aside__right .aside__div img {
   height: 45px;
