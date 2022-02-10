@@ -2,6 +2,12 @@
 @import '../base/extend';
 @import '../base/prefix';
 /* Header Start */
+.span {
+    @include span;
+}
+.tittle {
+    @include tittle;
+}
 header {
     position: relative;
     @include container;
@@ -42,7 +48,6 @@ header {
         .span__container {
             padding: 1em 0;
             .aside__span {
-                @include tittle;
                 font-size: 1.2em;
             }
         }
@@ -64,14 +69,6 @@ header {
             flex-direction: column;
             @include flex(center);
             text-align: center;
-            .aside__center__welcome {
-                .aside__center__span {
-                    @include span;
-                }
-                .aside__center__tittle {
-                    @include tittle;
-                }
-            }
             .aside__center__btn {
                 @include flex(space-evenly);
                 flex-direction: row;

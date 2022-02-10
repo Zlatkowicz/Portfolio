@@ -29,6 +29,16 @@ a {
 }
 
 /* Header Start */
+.span {
+  font-size: 1.2em;
+  opacity: rgba(255, 255, 255, 0.61);
+}
+
+.tittle {
+  color: #a29cec;
+  font-size: 3em;
+}
+
 header {
   position: relative;
   width: 70%;
@@ -106,8 +116,6 @@ header .aside .span__container {
   padding: 1em 0;
 }
 header .aside .span__container .aside__span {
-  color: #a29cec;
-  font-size: 3em;
   font-size: 1.2em;
 }
 @media screen and (max-width: 900px) {
@@ -129,14 +137,6 @@ header .aside__center .aside__center__container {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-header .aside__center .aside__center__container .aside__center__welcome .aside__center__span {
-  font-size: 1.2em;
-  opacity: rgba(255, 255, 255, 0.61);
-}
-header .aside__center .aside__center__container .aside__center__welcome .aside__center__tittle {
-  color: #a29cec;
-  font-size: 3em;
 }
 header .aside__center .aside__center__container .aside__center__btn {
   display: flex;
