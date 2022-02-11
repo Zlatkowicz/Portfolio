@@ -59,6 +59,6 @@
     background-color: map-get($color, bg-card);
     @include flex(center);
     flex-direction: column;
-    padding: .5em 1em;
-    margin: 0 .5em;
+    padding: 2em;
+    border-radius: 2em;
 }

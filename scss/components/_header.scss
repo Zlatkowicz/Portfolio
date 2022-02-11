@@ -81,6 +81,11 @@ header {
                     @media screen and (max-width: 550px) {
                         margin: .5em 0;
                     }
+                    &:hover {
+                        transition: .5s;
+                        color: #000;
+                        background-color: map-get($color, tittle);
+                    }
                 }
                 .btn__about {
                     background-color: map-get($color, tittle);
