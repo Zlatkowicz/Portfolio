@@ -25,12 +25,16 @@
         box-shadow: 0 0 2em map-get($color, tittle);
 }
 }
-@mixin icon {
+@mixin icon($transform) {
     background-color: map-get($color, bg-icon);
     border-radius: .3em;
     padding: .5em;
     &:hover {
-        transform: rotate(20deg);
+        transform: ($transform);
+        -webkit-transform: ($transform);
+        -o-transform: ($transform);
+        -moz-transform: ($transform);
+        -ms-transform: ($transform);
         transition: .5s;
         background-color: #a19cec94;
     }
@@ -59,6 +63,6 @@
     background-color: map-get($color, bg-card);
     @include flex(center);
     flex-direction: column;
-    padding: 2em;
+    padding: 1em;
     border-radius: 2em;
 }
