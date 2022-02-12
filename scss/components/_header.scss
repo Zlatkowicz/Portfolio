@@ -120,9 +120,17 @@ header {
             }
             .moon {
                 background-color: transparent;
+                animation: moon 5s infinite;
                 &:hover {
-                    transform: rotate(360deg);
                     background-color: transparent;
+                }
+                @keyframes moon {
+                    0% {
+                        @include transform(rotate(0deg));
+                    }
+                    100% {
+                        @include transform(rotate(360deg));
+                    }
                 }
             }
         }
