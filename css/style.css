@@ -9,6 +9,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+    scroll-behavior: smoot;    
+}
 a {
   text-decoration: none;
 }
