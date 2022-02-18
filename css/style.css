@@ -291,7 +291,7 @@ main .about__section .about__content {
 main .about__section .about__content .img__container img {
   border-radius: 2em;
   width: 350px;
-  filter: grayscale(50%);
+  filter: grayscale(100%);
   height: 350px;
 }
 @media screen and (max-width: 1440px) {
