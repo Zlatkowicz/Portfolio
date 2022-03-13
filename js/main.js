@@ -1,2 +1,2 @@
-let name = "Armando";
-let surename = "Zlatkowicz";
+let name = prompt('Ingrese su nombre completo:');
+alert(`Bienvenido ${name}`);
