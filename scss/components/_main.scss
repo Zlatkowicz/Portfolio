@@ -8,6 +8,7 @@ main {
         flex-direction: column;
         @media screen and (max-width: 700px){
             width: 100%;
+            margin-top: 10em;
         }
         .about__container {
             text-align: center;
