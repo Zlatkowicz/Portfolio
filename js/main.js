@@ -5,4 +5,9 @@ for (let i = 0; i <= numero; i++) {
     if(numero > 1000) {
         break;
     }
-} */
+} 
+let num = 5; 
+let numString = "5";
+let z = num == numString;
+console.log(z);
+*/
