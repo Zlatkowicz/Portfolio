@@ -1,6 +1,9 @@
 /* function pedirNumero() {
-    let num = 0;
-    for(num = 0; num < 10; num++) {
+    let num = parseInt(prompt('Ingrese un numero:'));
+    imprimirNumero(num)
+}
+function imprimirNumero(num) {
+    for(num >= 0; num < 100; num++) {
         console.log("Hola");
     }
 }
