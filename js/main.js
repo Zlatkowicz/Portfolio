@@ -30,3 +30,8 @@ function fullNameFunction(name, surename) {
 }
 const fullName = fullNameFunction(userName, userSurename);
 alert(`Bienvenido ${fullName}`);
+
+const suma = function(a, b){
+    console.log(a+b);
+}
+suma(2, 2);
