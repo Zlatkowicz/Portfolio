@@ -15,7 +15,6 @@ function darNombreCompleto(nombre, apellido) {
      ahí mismo, cualquier cosa debajo de return no sirve */
 }
 darNombreCompleto("Armando", "Zlatkowicz");
-
 /* let operador1 = parseInt(prompt('Ingrese un numero:'));
 let operador2 = parseInt(prompt('Ingrese otro numero:'));
 function sumar(x, y) {
