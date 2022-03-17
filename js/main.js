@@ -8,3 +8,10 @@ function imprimirNumero(num) {
     }
 }
 pedirNumero(); */
+
+function darNombreCompleto(nombre, apellido) {
+    const nombreCompleto = `${nombre} ${apellido}`;
+    return nombreCompleto; /*  el return finaliza la funcion
+     ahí mismo, cualquier cosa debajo de return no sirve */
+}
+darNombreCompleto("Armando", "Zlatkowicz");
