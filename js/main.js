@@ -35,6 +35,7 @@ alert(`Bienvenido ${fullName}`);
 se llama a la variables 
 
 El operador => suplanta la palabra reservada function
+Solo funciona en las funciones que se asignan dentro de una variable
 */
 const suma = (a, b) =>{
     console.log(a+b);
