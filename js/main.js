@@ -31,6 +31,8 @@ function fullNameFunction(name, surename) {
 const fullName = fullNameFunction(userName, userSurename);
 alert(`Bienvenido ${fullName}`);
 
+/*  Ya no se llama a la funcion directamente, 
+se llama a la variables */
 const suma = function(a, b){
     console.log(a+b);
 }
