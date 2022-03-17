@@ -32,8 +32,11 @@ const fullName = fullNameFunction(userName, userSurename);
 alert(`Bienvenido ${fullName}`);
 
 /*  Ya no se llama a la funcion directamente, 
-se llama a la variables */
-const suma = function(a, b){
+se llama a la variables 
+
+El operador => suplanta la palabra reservada function
+*/
+const suma = (a, b) =>{
     console.log(a+b);
     if(a > b || a == b) {
         console.log("A es mayor o igual a B ");
