@@ -35,5 +35,10 @@ alert(`Bienvenido ${fullName}`);
 se llama a la variables */
 const suma = function(a, b){
     console.log(a+b);
+    if(a > b || a == b) {
+        console.log("A es mayor o igual a B ");
+    } else {
+        console.log("A es menor que B")
+    }
 }
 suma(2, 2);
