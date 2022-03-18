@@ -58,15 +58,3 @@ suma(2, 2);
     }
 }
 selector(); */
-/* 
-Ejemplo de compra de productos aplicando un descuento sobre el precio final
-
-let precio, cantidad, descuento, compra, pagar;
-
-precio = parseInt(prompt('Ingrese un precio: '));
-cantidad = parseInt(prompt('Ingrese la cantidad: '));
-compra = precio * cantidad;
-descuento = compra * 0.15;
-pagar = compra - descuento; 
-alert(`El descuento es de: ${descuento}`);
-alert(`El total a pagar es de: ${pagar}`);  */
