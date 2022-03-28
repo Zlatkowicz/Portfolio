@@ -6,12 +6,18 @@ main {
         @include container;
         @include flex(space-around);
         flex-direction: column;
-        @media screen and (max-width: 700px){
-            width: 100%;
+        @media screen and (max-width: 1300px) {
             margin-top: 10em;
+            width: 100%;
         }
         .about__container {
             text-align: center;
+            @media screen and (max-width: 1280px){
+                margin-bottom: 10em;
+            }
+            @media screen and (max-width: 900px){
+                margin-top: 30em;
+            }
             .about__span {
                 @include span;
             }
@@ -34,9 +40,9 @@ main {
                     width: 350px;
                     height: 350px;
                     @media screen and (max-width: 1440px){
-                        margin-bottom: 2em;
+                        margin-bottom: 4em;
                     }
-                    @media screen and (max-width: 480px){
+                    @media screen and (max-width: 1280px){
                         width: 280px;
                         height: 280px;
                     }
