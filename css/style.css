@@ -127,6 +127,7 @@ header .aside .span__container .aside__span {
 @media screen and (max-width: 900px) {
   header .aside .icon__container {
     flex-direction: row;
+    margin-top: 6em;
   }
 }
 header .aside__center {
@@ -136,6 +137,11 @@ header .aside__center {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  header .aside__center {
+    margin-top: 4em;
+  }
 }
 header .aside__center .aside__center__container {
   flex-direction: column;
@@ -192,16 +198,10 @@ header .aside__center .aside__center__container img {
   width: 500px;
   height: 500px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
   header .aside__center .aside__center__container img {
-    width: 350px;
-    height: 350px;
-  }
-}
-@media screen and (max-width: 500px) {
-  header .aside__center .aside__center__container img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -254,14 +254,24 @@ main .about__section {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
   main .about__section {
-    width: 100%;
     margin-top: 10em;
+    width: 100%;
   }
 }
 main .about__section .about__container {
   text-align: center;
+}
+@media screen and (max-width: 1280px) {
+  main .about__section .about__container {
+    margin-bottom: 10em;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .about__section .about__container {
+    margin-top: 30em;
+  }
 }
 main .about__section .about__container .about__span {
   font-size: 1.2em;
@@ -294,10 +304,10 @@ main .about__section .about__content .img__container img {
 }
 @media screen and (max-width: 1440px) {
   main .about__section .about__content .img__container img {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px) {
   main .about__section .about__content .img__container img {
     width: 280px;
     height: 280px;
