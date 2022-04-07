@@ -1,6 +1,9 @@
 @import 'base/prefix';
 @import 'base/var';
 @import 'base/extend';
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $font;
     color: map-get($color, txt);
